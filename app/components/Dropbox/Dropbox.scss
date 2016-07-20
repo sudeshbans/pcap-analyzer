@@ -1,0 +1,99 @@
+@mixin box {
+  display: inline-block;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  width: 15px;
+  color: #42C342;
+  height: 13px;
+  font-size: small;
+  border-radius: 2px;
+  margin-left: 10px;
+  margin-top: 3px;
+  border-color: cadetblue;
+}
+
+@mixin all-buttons {
+  cursor: pointer;
+  border-style: solid;
+  border-width: 1px;
+  padding: 3px;
+  font-size: 12px;
+  margin-left: 35px;
+}
+
+.dropzone {
+  margin: 20px;
+  border-style: dashed;
+  padding: 10px;
+  text-align: center;
+  letter-spacing: 2px;
+  cursor: pointer;
+  .dropzone-info {
+    padding: 5px;
+  }
+  .dropzone-browse {
+    font-style: italic;
+    text-decoration: underline;
+    margin-left: 5px;
+  }
+
+}
+
+.list-header {
+  display: flex;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: rgba(67, 181, 109, 0.89);
+  .files-select-header {
+    margin-right: 20px;
+  }
+}
+
+.loaded-files {
+  .box-unchecked {
+    @include box();
+  }
+  .box-checked {
+    @include box();
+  }
+
+  .name-row {
+    display: flex;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  .filename-row {
+    display: flex;
+    .filename {
+      display: inline-block;
+      padding-top: 1px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 180px;
+    }
+  }
+  .remove-file {
+    @include box();
+    border-color: #E87676;
+    color: #E87676;
+    font-size: 12px !important;
+  }
+}
+
+
+
+
+.remove-all-button {
+  @include all-buttons();
+  color: #E87676;
+}
+
+
+.add-all-button {
+    @include all-buttons();
+    color: #7BE876;
+}

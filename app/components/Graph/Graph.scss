@@ -1,0 +1,24 @@
+.mg-x-axis line,
+.mg-y-axis line {
+  stroke: #523C3C;
+}
+tspan.mg-chart-title {
+  fill: #ccc;
+}
+div#traffic {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.mg-active-datapoint {
+  fill: #ccc;
+}
+
+g.mg-x-axis,
+g.mg-y-axis {
+  stroke: #05b378;
+  fill: #05b378;
+  font-family: monospace;
+}

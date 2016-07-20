@@ -1,0 +1,23 @@
+@import 'app.global.variable.scss';
+@import './components/Home.scss';
+@import './components/Nav/Nav.scss';
+@import './components/Graph/Graph.scss';
+@import './components/Modal/Modal.scss';
+@import './components/Dropbox/Dropbox.scss';
+body {
+  position: relative;
+  color: $primary-text-color;
+  height: 100vh;
+  background: $app-background-color;
+  font-family: Arial, Helvetica, Helvetica Neue;
+  overflow-y: hidden;
+}
+a:link {
+  /* Applies to all unvisited links */
+  text-decoration: none;
+}
+
+.bottom {
+  position: absolute;
+  top: 95%;
+}

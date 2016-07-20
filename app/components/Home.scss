@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  .dropzone {
+    border-style: dashed;
+    padding: 50px;
+
+    .dropzone-header {
+      text-align: center;
+    }
+
+    .dropzone-link {
+      padding-left: 60px;
+      font-size: 20px;
+    }
+
+    .dropzone-info {
+      font-size: 10px;
+    }
+  }
+
+}
+.example-appear {
+   opacity: 0.01;
+}
+
+.example-enter {
+   opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+   opacity: 1;
+   transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+   opacity: 1;
+}
+
+.example-leave.example-leave-active {
+   opacity: 0.01;
+   transition: opacity 500ms ease-in;
+}
+
+
+.example-appear.example-appear-active {
+   opacity: 1;
+   transition: opacity 500ms ease-in;
+}
+
+
+.list-of-files {
+  padding-top: 80px;
+  .file-icon, .file-size, .file-path, .file-name {
+    padding-right: 20px;
+  }
+  .file-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

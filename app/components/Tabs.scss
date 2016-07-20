@@ -1,0 +1,32 @@
+.horizontal-nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+
+    li {
+        float: left;
+    }
+
+    li {
+        display: block;
+        text-align: center;
+        margin-left: 30px;
+        padding: 10px 20px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    li:hover {
+        background-color: rgb(26, 29, 45);
+    }
+}
+
+.active {
+    color: rgba(238, 238, 238, 0.71);
+    border-bottom: solid 1px;
+    padding-bottom: 1px;
+    border-color: rgba(144, 101, 101, 0.48);
+}
+
+.inactive {
+    color: #3b3e52;
+}
